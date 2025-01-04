@@ -49,7 +49,7 @@ const SensorGraph: React.FC = () => {
         throw new Error("Failed to fetch data");
       }
       const data = await response.json();
-      setLoading(false)
+      setLoading(false);
       const averages = calculateSensorAverages(data);
       setSensorAverages(averages);
       setRawData(data);

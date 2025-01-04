@@ -57,7 +57,6 @@ const Graph: React.FC<GraphProps> = ({ data, id }) => {
       onOrientationChange
     );
 
-
     return () => {
       subscription?.remove();
     };
